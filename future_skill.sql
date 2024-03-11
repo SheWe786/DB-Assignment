@@ -14,7 +14,7 @@ CREATE TABLE product (
     deleted_at TIMESTAMP,
     FOREIGN KEY (category_id) REFERENCES product_category(category_id),
     FOREIGN KEY (inventory_id) REFERENCES product_inventory(inventory_id),
-    FOREIGN KEY (discount_id) REFERENCES discount(discount_id)
+    FOREIGN KEY (discount_id) REFERENCES discount(discount_id) 
 );
 
 CREATE TABLE product_category (
